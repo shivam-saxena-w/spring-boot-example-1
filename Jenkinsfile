@@ -1,7 +1,7 @@
 pipeline {
     agent any
      tools {
-          maven 'Maven'
+          maven 'maven3'
 
      }
     stages {
@@ -39,13 +39,13 @@ pipeline {
     }
     post {
            success{
-                emailext to: "toshima.sharma@knoldus.com",
+                emailext to: "shivam.saxena@knoldus.com",
                 subject: "Test Email Sucess",
                 body: "Test Success"
             }
 
             failure{
-                emailext to: "toshima.sharma@knoldus.com",
+                emailext to: "shivam.saxena@knoldus.com",
                 subject: "Test Email Failure",
                 body: "Test Failure"
             }
