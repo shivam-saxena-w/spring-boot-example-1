@@ -41,13 +41,13 @@ pipeline {
            success{
                 emailext to: "shivam.saxena@knoldus.com",
                 subject: "Test Email Sucess",
-                body: "Test Success"
+                body: "Test Success email"
             }
 
             failure{
                 emailext to: "shivam.saxena@knoldus.com",
                 subject: "Test Email Failure",
-                body: "Test Failure"
+                body: "Test Failure email"
             }
     }
 }
